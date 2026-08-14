@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CS 316"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "covid"
+	}
+}

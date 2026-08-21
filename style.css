@@ -11,15 +11,15 @@ img {
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: 'inter', Montserrat;
 }
 
 body {
-  background-image: url("./img/bd952abe44d72135d26cf838b32f4d954c221a6e.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./img/unsplash_SfDofjXtxHE.png");
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
-  background-color: #0b153c;
+  background-color: #0B153C;
 }
 
 /* navbar */
@@ -207,6 +207,7 @@ a {
   justify-content: space-around;
   align-items: center;
   background-color: whitesmoke;
+  opacity: 50%;
   padding: 20px;
   z-index: 1;
   position: relative;
@@ -1398,4 +1399,36 @@ a {
   cursor: pointer;
   flex-shrink: 0;
 }
+}
+/* ==========================================
+   SỬA LỖI LỆCH TRỤC TRÊN DESKTOP 
+   (Đưa các khối về chung 1 trục thẳng 1170px)
+   ========================================== */
+@media screen and (min-width: 769px) {
+  .navbar,
+  .b,
+  .results-section,
+  .results-section p,
+  .text-results,
+  .title-getvaccin,
+  .vaccine-cards-container,
+  .reg-container,
+  .feedback-wrapper,
+  .footer {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Khử khoảng cách 2 bên của thanh Menu */
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Kéo khối Schedule về đúng vị trí ngang hàng */
+  .b {
+    margin-top: -290px;
+  }
 }
